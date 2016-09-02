@@ -34,8 +34,8 @@ app.post('/contact-form',function(req,res){
 
     service:'Gmail',
      auth:{
-        user:'sandy.tc999@gmail.com',
-         pass:'gallbladder'
+        user:'sandeeptcphotography@gmail.com',
+         pass:'angularjs'
      }
  });
 
