@@ -1,0 +1,152 @@
+body {
+  //padding: 50px;
+  //font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#nav {
+    padding: 30px;
+    margin-bottom: -40px;
+    font-size: 14px;
+
+}
+.form-inline{
+    padding: 32px;
+    margin-bottom: -40px;
+}
+
+a {
+  color: #9C9C9C;
+  text-decoration: none;
+}
+
+
+#nav li{
+  //text-decoration: none;
+    //margin-top: 40px;
+  font-family: "Open Sans";
+  //margin-left:15px;
+  //font-size: 20px;
+  font-weight: 500;
+
+
+}
+
+#nav_gallery li{
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+}
+
+#nav a:hover{
+  color:rgb(63,81,181);
+}
+#nav a:visited
+{
+  text-decoration: none;
+  decoration: none;
+}
+
+#nav a:active{
+  color:darkblue;
+}
+
+
+.carousel-caption{
+  font-size: 30px;
+
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter:none !important;
+  background-image:none;
+  outline: 0;
+  opacity: 1;
+}
+
+.carousel-inner > .item
+
+
+.icon-bar{
+  display: inline-block;
+  //vertical-align:middle;
+}
+
+hr{
+  color:darkblue;
+}
+
+.validation-messages {
+  font-size: 12px;
+  color: #dd2c00;
+  margin: 10px 0 0 25px; }
+
+#time{
+  color:grey;
+  font-weight: normal;
+}
+
+.well{
+  margin-top: 0px;
+  background-color:rgb(63,81,181) ;
+  color:white;
+  text-align: center;
+  //height:30px;
+  padding:10px;
+
+}
+.container{
+  background-color: white;
+}
+
+.bio{
+  padding: 0px 20px 10px 25px;
+  font-size:16px;
+  font-family:"Helvetica Neue";
+  font-style: italic;
+  text-align: justify;
+  margin-top: -20px;
+  //box-shadow: 10px 10px 10px 5px #888888;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+.page-header{
+  font-family:Open Sans;
+  font-style: normal;
+}
+
+ md-grid-list {
+  margin: 0px; }
+.gray {
+  background: #f5f5f5; }
+ .green {
+  background: #b9f6ca; }
+ .yellow {
+  background: #ffff8d; }
+.blue {
+  background: #84ffff; }
+ .purple {
+  background: #b388ff; }
+ .red {
+  background: #ff8a80; }
+ md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+
+li{
+    list-style-type: none;
+}
+
+.category_top{
+    margin-top: 0px;
+
+}
+
+.gallery_lyt{
+    padding:0px 100px 10px 100px;
+}
+
+.my_picture{
+    margin-top: 25px;
+}

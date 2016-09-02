@@ -1,0 +1,97 @@
+<div ng-controller="contactController">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-7">
+            <img src="images/kid.jpg" class="img-rounded" width="100%"/>
+        </div>
+        <div class="col-sm-12  col-md-4 md-whiteframe-z3">
+            <h3 class="page-header well">Drop a Message!</h3>
+            <form name="myForm" ng-submit="sendMail()">
+            <div layout="column" >
+                <md-content class="md-no-momentum">
+                    <md-input-container class="md-icon-float md-block">
+                        <!-- Use floating label instead of placeholder -->
+                        <label>Name</label>
+                        <md-icon><span class="glyphicon glyphicon-user"></span></md-icon>
+                        <input ng-model="contact.name" type="text" ng-required="true">
+                    </md-input-container>
+                    <md-input-container class="md-block md-icon-float ">
+                        <md-icon><span class="glyphicon glyphicon-earphone"></span></md-icon>
+                        <input name="phone" ng-model="contact.phone" type="text" placeholder="Phone Number" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/"/>
+                        <div class="hint" ng-show="showHints">(###) ###-####</div>
+                        <div ng-messages="myForm.phone.$error" ng-hide="showHints">
+                            <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <!-- Use floating placeholder instead of label -->
+                        <md-icon><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></md-icon>
+                        <input ng-model="contact.email" type="email" placeholder="Email(required)" ng-required="true">
+                    </md-input-container>
+                    <md-input-container class="md-icon-float md-icon-right md-block">
+                        <label>Your Message(required)</label>
+                        <md-icon><span class="glyphicon glyphicon-pencil"></span></md-icon>
+                        <textarea ng-model="contact.message"  ng-required="true"></textarea>
+                    </md-input-container>
+                    <h3 class="page-header well">Wanna meet Inperson?</h3>
+
+                    <md-input-container md-no-float class="md-block">
+                        <md-icon><span class="glyphicon glyphicon-map-marker"style="display:inline-block;"></span></md-icon>
+                        <input ng-model="contact.address" type="text" placeholder="Address" >
+                    </md-input-container>
+                    <div layout-gt-sm="row">
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>City</label>
+                            <input ng-model="contact.city">
+                        </md-input-container>
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>State</label>
+                            <md-select ng-model="contact.state">
+                                <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                                    {{state.abbrev}}
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div>
+                        <md-datepicker name="dateField" ng-model="myDate" md-placeholder="Enter date" required="" md-min-date="minDate" md-max-date="maxDate" md-date-filter="onlyWeekendsPredicate"></md-datepicker>
+                        &emsp;
+                        <label id="time">Time</label>
+                        <input type="time" />
+                            <div class="validation-messages" ng-messages="myForm.dateField.$error">
+                                <div ng-message="valid">The entered value is not a date!</div>
+                                <div ng-message="required">This date is required!</div>
+                                <div ng-message="mindate">Date is too early!</div>
+                                <div ng-message="maxdate">Date is too late!</div>
+                                <div ng-message="filtered">Only weekends are allowed!</div>
+                            </div>
+                        <md-button  type="submit" class="md-primary" ng-class="{'md-raised':(myForm.$dirty && myForm.$valid)}">Submit</md-button>
+                    </div>
+                    </md-content>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="photoApp">
+<link>
+    <meta charset="UTF-8">
+    <title>SandeepTCPhotography</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body ng-controller="mainController">
+
+<div class="container">
+
+    <!--
+
+    <nav class="navbar">
+
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul id="nav">
+            <li class="active"><a href="#/home">HOME</a></li>
+            <li><a href="#/me">ABOUT</a></li>
+            <li><a href="#/gallery">GALLERY</a></li>
+            <li><a href="#/portfolio">PORTFOLIO</a></li>
+            <li><a href="#/bookings">CONTACT</a></li>
+            <li><a href="#/blog">BLOGSPOT</a></li>
+        </ul>
+
+    </div>
+    </nav>
+    -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul id="nav" class="nav navbar-nav">
+                    <li class="active"><a href="#/home">HOME</a></li>
+                    <li><a href="#/me">ABOUT</a></li>
+                    <li><a href="#/gallery">GALLERY</a></li>
+                    <li><a href="#/portfolio">PORTFOLIO</a></li>
+                    <li><a href="#/bookings">CONTACT</a></li>
+                    <li><a href="#/blog">BLOGSPOT</a></li>
+                </ul>
+                <form class="form-inline pull-right">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <md-button type="submit" class="md-primary">Search</md-button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <ng-view></ng-view>
+
+    <hr>
+
+    <footer>
+        <div align="center">@Copyright Protected. All rights reserved</div>
+    </footer>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.5.8/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="controller/controller.js"></script>
+
+</body>
+</html>
